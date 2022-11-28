@@ -97,15 +97,16 @@ div.grid:not(#f_select) {
         @include transition($kb: ease-in);
         display: block;
         width: 100%;
-        padding: 0.25rem 1rem;
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
+        padding-block: 0.125em;
         background-color: hsl($neutral-clr-900);
         border-radius: 0.25rem;
         color: hsl($neutral-clr-500);
         cursor: pointer;
         text-align: center;
+        position: relative;
 
         &:is(:hover, :focus) {
           outline: 0;
@@ -117,6 +118,12 @@ div.grid:not(#f_select) {
           background-color: hsl($primary-clr-600);
           color: hsl($neutral-clr-900);
         }
+      }
+
+      :not(:last-child)::before {
+        position: absolute;
+        left: 0;
+        right: 0;
       }
 
       :nth-child(1)::before {

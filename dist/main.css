@@ -170,15 +170,16 @@ div.grid:not(#f_select) {
   transition: ease-in 100ms;
   display: block;
   width: 100%;
-  padding: 0.25rem 1rem;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-block: 0.125em;
   background-color: hsl(183deg, 100%, 15%);
   border-radius: 0.25rem;
   color: hsl(189deg, 41%, 97%);
   cursor: pointer;
   text-align: center;
+  position: relative;
 }
 .input__tip__grid > .input__tip__grid--values input[type=radio]:is(:hover, :focus) {
   outline: 0;
@@ -188,6 +189,11 @@ div.grid:not(#f_select) {
 .input__tip__grid > .input__tip__grid--values input[type=radio]:checked {
   background-color: hsl(172deg, 67%, 45%);
   color: hsl(183deg, 100%, 15%);
+}
+.input__tip__grid > .input__tip__grid--values :not(:last-child)::before {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 .input__tip__grid > .input__tip__grid--values :nth-child(1)::before {
   content: "5%";
