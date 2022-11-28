@@ -140,7 +140,7 @@ div.grid:not(#f_select) {
   color: hsl(183deg, 100%, 15%);
   appearance: none;
   -moz-appearance: textfield;
-  background-image: url("../../assets/images/icon-dollar.svg");
+  background-image: url("../assets/images/icon-dollar.svg");
   background-repeat: no-repeat;
   background-position: top 0.8125rem left 1.125rem;
 }
@@ -274,7 +274,7 @@ div.grid:not(#f_select) {
   color: hsl(183deg, 100%, 15%);
   appearance: none;
   -moz-appearance: textfield;
-  background-image: url("../../assets/images/icon-person.svg");
+  background-image: url("../assets/images/icon-person.svg");
   background-repeat: no-repeat;
   background-position: top 0.75rem left 1.125rem;
 }
