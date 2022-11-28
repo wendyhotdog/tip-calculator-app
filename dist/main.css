@@ -68,7 +68,7 @@ main {
   align-items: center;
 }
 main h1 {
-  margin-block: 5.75rem 5rem;
+  margin-block: 5.75rem 3.5rem;
 }
 
 .fs-xs {
@@ -108,6 +108,7 @@ div.grid:not(#f_select) {
   border-radius: 1.5rem;
   max-width: 60em;
   box-shadow: 0.5rem 1.5rem 2rem hsla(184deg, 14%, 56%, 0.15);
+  margin-block: 1.5rem;
 }
 @media screen and (max-width: 45em) {
   div.grid:not(#f_select) {

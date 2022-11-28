@@ -9,6 +9,7 @@ div.grid:not(#f_select) {
   border-radius: 1.5rem;
   max-width: 60em;
   box-shadow: 0.5rem 1.5rem 2rem hsl(184 14% 56% / 0.15);
+  margin-block: 1.5rem;
 
   @media screen and (max-width: 45em) {
     grid-template-columns: 1fr;
