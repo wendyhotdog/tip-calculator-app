@@ -1,0 +1,56 @@
+//colors
+$primary-clr-600: 172 67% 45%;
+$neutral-clr-400: 0 0% 100%;
+$neutral-clr-500: 189 41% 97%;
+$neutral-clr-600: 185 41% 84%;
+$neutral-clr-700: 184 14% 56%;
+$neutral-clr-800: 186 14% 43%;
+$neutral-clr-900: 183 100% 15%;
+
+$warn-clr: 1 53% 54% / 0.7;
+
+body {
+  background-color: hsl($neutral-clr-600);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+main {
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin-block: 5.75rem 5rem;
+  }
+}
+
+//utilities
+
+.fs-xs {
+  font-size: 0.875rem;
+}
+
+.fs-s {
+  font-size: 1rem;
+}
+
+.fs-sm {
+  font-size: 1.3125rem;
+}
+
+.fs-m {
+  font-size: 1.5rem;
+}
+
+.fs-l {
+  font-size: clamp(2.25rem, max(4.5vh, 4vw), 2.75rem);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}

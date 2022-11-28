@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <script defer src="./src/js/main.js"></script>
+    <title>Tip Calculator App</title>
+  </head>
+  <body>
+    <main class="flex">
+      <h1><img src="./assets/images/logo.svg" alt="Splitter Logo" /></h1>
+      <div class="grid">
+        <section class="input flex">
+          <form id="form" class="input__bill flex">
+            <div id="billContainer">
+              <h2><label for="f_bill" class="fs-s">Bill</label></h2>
+              <input
+                type="number"
+                name="f_bill"
+                id="f_bill"
+                placeholder="0"
+                step="any"
+                min="0"
+                class="input__bill__field fs-m"
+              />
+              <p id="f_bill--warn" class="warning__message"></p>
+            </div>
+            <div class="input__tip">
+              <h2 class="fs-s">Select Tip %</h2>
+              <div class="input__tip__grid">
+                <div id="f_select" class="input__tip__grid--values grid">
+                  <input
+                    type="radio"
+                    name="tipPct"
+                    class="tip-percentage fs-m"
+                    value="5"
+                  />
+                  <input
+                    type="radio"
+                    name="tipPct"
+                    class="tip-percentage fs-m"
+                    value="10"
+                  />
+                  <input
+                    type="radio"
+                    name="tipPct"
+                    class="tip-percentage fs-m"
+                    value="15"
+                  />
+                  <input
+                    type="radio"
+                    name="tipPct"
+                    class="tip-percentage fs-m"
+                    value="25"
+                  />
+                  <input
+                    type="radio"
+                    name="tipPct"
+                    class="tip-percentage fs-m"
+                    value="50"
+                  />
+                  <input
+                    type="number"
+                    id="f_custom"
+                    name="custom"
+                    placeholder="Custom"
+                    min="0"
+                    max="100"
+                    class="fs-m"
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="peerCountContainer" class="input__peer">
+              <h2>
+                <label for="f_peerCount" class="fs-s">Number of People</label>
+              </h2>
+              <input
+                type="number"
+                name="people"
+                id="f_peerCount"
+                placeholder="0"
+                class="fs-m"
+              />
+              <p id="f_peerCount--warn" class="warning__message"></p>
+            </div>
+          </form>
+        </section>
+        <section class="amount flex">
+          <div class="flex">
+            <div class="amount__tipXperson">
+              <h2 class="fs-s">Tip Amount</h2>
+              <h3 class="fs-xs">/ person</h3>
+            </div>
+            <p id="tipXperson" class="fs-l">$0.00</p>
+          </div>
+          <div class="flex">
+            <div class="amount__totalXperson">
+              <h2 class="fs-s">Total</h2>
+              <h3 class="fs-xs">/ person</h3>
+            </div>
+            <p id="totalXperson" class="fs-l">$0.00</p>
+          </div>
+          <button id="reset_btn" class="amount__reset fs-sm">RESET</button>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
