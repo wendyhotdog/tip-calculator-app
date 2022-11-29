@@ -21,12 +21,9 @@ let tipAmount;
 let total;
 
 fBill.addEventListener("keyup", () => {
-  if (fBill.value == 0) {
-    displayError(billContainer, fBillWarn);
-  } else {
-    fBill_value = fBill.value;
-    clearError(billContainer, fBillWarn);
-  }
+  fBill.value == 0
+    ? displayError(billContainer, fBillWarn)
+    : ((fBill_value = fBill.value), clearError(billContainer, fBillWarn));
 
   if (tipPctValue && fPeerCount_value) {
     calc();
