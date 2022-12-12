@@ -21,7 +21,7 @@ let tipAmount;
 let total;
 
 fBill.addEventListener("keyup", () => {
-  fBill.value == 0
+  fBill.value <= 0
     ? displayError(billContainer, fBillWarn)
     : ((fBill_value = fBill.value), clearError(billContainer, fBillWarn));
 
@@ -57,7 +57,7 @@ const selectCustomValue = (tipPctButton) => {
 
 const getCustomValue = () => {
   fCustom.addEventListener("keyup", () => {
-    if (fCustom.value == 0) {
+    if (fCustom.value <= 0) {
       fSelect.classList.add("warning");
     } else {
       tipPctValue = fCustom.value;
@@ -73,7 +73,7 @@ const getCustomValue = () => {
 };
 
 fPeerCount.addEventListener("keyup", () => {
-  if (fPeerCount.value == 0) {
+  if (fPeerCount.value <= 0) {
     displayError(peerContainer, fPeerWarn);
   } else {
     clearError(peerContainer, fPeerWarn);
